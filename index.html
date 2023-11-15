@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <h1 class="header__title">Checkout</h1>
+        </header>
+        <div class="bagbox">
+            <section class="checkout">
+            <div class="checkout__card">
+                <div class="card__image">
+                    <img
+                    src="./images/photo1.png"
+                    alt="vintage backbag"
+                    srcset=""
+                    />
+                </div>
+                <div class="card__info">
+                    <h2 class="card__title">Vintage Backbag</h2>
+                    <div class="card__price">
+                        <span class="promo">$54.99</span>
+                        <span class="price">$94.99</span>
+                </div>
+                <div class="card__count">
+                    <button id="minus-btn">-</button>
+                    <p id="counter">1</p>
+                    <button id="plus-btn">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="checkout__card">
+            <div class="card__image">
+                <img src="./images/photo2.png" alt="levi shoes" srcset="" />
+            </div>
+            <div class="card__info">
+                <h2 class="card__title">Levi Shoes</h2>
+                <div class="card__price">
+                    <span class="promo">$74.99</span>
+                    <span class="price">$124.99</span>
+                </div>
+                <div class="card__count">
+                    <button id="minus-btn">-</button>
+                    <p id="counter">1</p>
+                    <button id="plus-btn">+</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="shipping">
+            <div class="shipping__label">Shipping</div>
+            <div class="shipping__price">$19</div>
+        </div>
+        <hr>
+
+        <div class="total">
+            <div class="total__label">Total</div>
+            <div class="total__price">$148.98</div>
+        </div>
+        <script>
+            // Get the counter element
+            
+            const counterElement = document.getElementById("counter");
+        
+            // Get the plus and minus buttons
+            const minusButton = document.getElementById("minus-btn");
+            const plusButton = document.getElementById("plus-btn");
+        
+            // Initial counter value
+            let counterValue = 0;
+        
+            // Update the counter display
+            function updateCounter() {
+                counterElement.textContent = counterValue;
+            }
+        
+            // Event listener for the minus button
+            minusButton.addEventListener("click", function() {
+                counterValue--;
+                updateCounter();
+            });
+        
+            // Event listener for the plus button
+            plusButton.addEventListener("click", function() {
+                counterValue++;
+                updateCounter();
+            });
+        </script>
+
+    </div>    
+
+</body>
+</html>

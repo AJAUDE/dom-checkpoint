@@ -1,0 +1,100 @@
+ .container{
+    display: flex;
+    /* margin: 200px; */
+    
+ }  
+.header__title{
+    align-items: center;
+}
+.body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    background-color: #4e5150;
+}
+.bagbox{
+    /* border: 1px solid red; */
+    background-color: #f3f4f47d;
+}
+.checkout__card{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+    /* max-width:700px; */
+    /* border-radius: 1px; */
+    font-size: 1em;
+    color: #4e5150;
+    
+}
+.card__image .img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    border-radius: 4px;
+}
+.card__title{
+    display: block;
+    /* margin-left:80px ; */
+    font-weight: bold; 
+    
+}
+img{
+    border-radius: 1px;
+
+}
+.card__info{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 66%;
+}
+.card__price{
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    margin-top: 100px;
+    margin-right: 200px;
+}.shipping{
+    display: flex;
+    justify-content: space-between;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+}
+.totalnumber{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.card__count{
+    display: flex;
+    border: 0.0833em solid #828282;
+    border-radius: 1em;
+    padding: 0.5em 0.34em;
+    transform: rotate(-90deg);
+    margin-right: 250px;
+}
+#minus-btn{
+    border: 1px solid #828282;
+    border-radius: 1px;
+    transform: rotate(90deg);
+    height: 20px;
+    align-content: center;
+    padding-left: 5px;
+}
+#plus-btn{
+    border: 1px solid #828282;
+    border-radius: 1px;
+    transform: rotate(90deg);
+    height: 20px;
+    align-content: center;
+}
+#counter{
+    transform: rotate(90deg);
+    margin-bottom: auto;
+}
+.promo{
+    padding: auto;
+    color: darkgoldenrod;
+}
+.price{
+    text-decoration: line-through;
+    margin-right: 10px;
